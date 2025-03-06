@@ -18,8 +18,7 @@ import java.time.Duration;
 
 @Configuration
 @EnableCaching
-@EnableRetry
-public class RedisCacheRetryConfig {
+public class RedisCacheConfig {
 
     @Value("${spring.redis.host:localhost}")
     private String redisHost;
