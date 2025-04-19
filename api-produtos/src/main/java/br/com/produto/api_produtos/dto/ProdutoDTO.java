@@ -4,6 +4,8 @@ import br.com.produto.api_produtos.entity.ProdutoEntity;
 import br.com.produto.api_produtos.enums.Categoria;
 import lombok.*;
 
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @Builder // Lombok annotation to provide the builder pattern
