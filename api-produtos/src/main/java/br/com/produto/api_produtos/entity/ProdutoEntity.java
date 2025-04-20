@@ -9,6 +9,7 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -52,11 +53,11 @@ public class ProdutoEntity {
 
     @CreationTimestamp // Automatically set on creation
     @Column(name = "data_criacao", nullable = false, updatable = false)
-    private LocalDateTime dataCriacao;
+    private LocalDate dataCriacao;
 
     @UpdateTimestamp // Automatically set on update
     @Column(name = "data_atualizacao", nullable = false)
-    private LocalDateTime dataAtualizacao;
+    private LocalDate dataAtualizacao;
 
     // --- End of Added Fields ---
 

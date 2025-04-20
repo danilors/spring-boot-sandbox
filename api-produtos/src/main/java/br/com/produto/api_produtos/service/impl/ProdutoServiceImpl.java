@@ -27,6 +27,6 @@ public class ProdutoServiceImpl implements ProdutoService {
 
     @Override
     public void salvar(ProdutoDTO produtoDTO) {
-
+        produtoRepository.save(produtoDTO.toEntity());
     }
 }
